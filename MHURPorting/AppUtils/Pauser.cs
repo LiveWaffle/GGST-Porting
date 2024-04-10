@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MHURPorting.AppUtils;
+namespace GGSTPorting.AppUtils;
 
 public class Pauser
 {

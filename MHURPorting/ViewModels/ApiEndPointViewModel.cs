@@ -1,11 +1,11 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using MHURPorting.Services.Endpoints;
+using GGSTPorting.Services.Endpoints;
 using RestSharp;
 using RestSharp.Serializers.NewtonsoftJson;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class ApiEndpointViewModel
 {

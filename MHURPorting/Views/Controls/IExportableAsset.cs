@@ -2,7 +2,7 @@
 using CUE4Parse.UE4.Assets.Exports;
 using SkiaSharp;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public interface IExportableAsset
 {

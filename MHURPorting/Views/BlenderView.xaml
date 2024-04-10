@@ -1,9 +1,9 @@
-﻿<adonisCtrls:AdonisWindow x:Class="MHURPorting.Views.BlenderView"
+﻿<adonisCtrls:AdonisWindow x:Class="GGSTPorting.Views.BlenderView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         
-        xmlns:local="clr-namespace:MHURPorting"
-        xmlns:extensions="clr-namespace:MHURPorting.Views.Extensions"
+        xmlns:local="clr-namespace:GGSTPorting"
+        xmlns:extensions="clr-namespace:GGSTPorting.Views.Extensions"
         xmlns:cue4Parse="clr-namespace:CUE4Parse;assembly=CUE4Parse"
         xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
         xmlns:adonisCtrls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"

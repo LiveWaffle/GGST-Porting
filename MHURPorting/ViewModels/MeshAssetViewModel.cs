@@ -9,11 +9,11 @@ using System.Windows.Data;
 using System.Windows.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MHURPorting.Views.Controls;
-using MHURPorting;
-using MHURPorting.AppUtils;
+using GGSTPorting.Views.Controls;
+using GGSTPorting;
+using GGSTPorting.AppUtils;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class MeshAssetViewModel : ObservableObject
 {

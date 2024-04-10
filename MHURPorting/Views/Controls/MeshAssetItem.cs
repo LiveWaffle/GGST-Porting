@@ -2,7 +2,7 @@
 using System.Windows.Media.Imaging;
 using CUE4Parse.UE4.Assets.Exports;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public class MeshAssetItem : IExportableAsset
 {

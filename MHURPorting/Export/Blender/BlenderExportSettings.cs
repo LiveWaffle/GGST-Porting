@@ -1,4 +1,4 @@
-﻿namespace MHURPorting.Export.Blender;
+﻿namespace GGSTPorting.Export.Blender;
 
 public class BlenderExportSettings : ExportSettingsBase
 {

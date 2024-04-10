@@ -16,17 +16,17 @@ using CUE4Parse.UE4.Assets.Exports.Texture;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Engine;
 using CUE4Parse.UE4.Objects.UObject;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.Views.Extensions;
 using Serilog;
 using ZstdSharp.Unsafe;
 using CUE4Parse.UE4.Objects.Core.i18N;
-using MHURPorting.AppUtils;
-using MHURPorting.Views.Controls;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Views.Controls;
 using SharpGLTF.Schema2;
 using System.Windows.Markup;
 using CUE4Parse.FileProvider.Objects;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class AssetHandlerViewModel
 {
@@ -90,21 +90,12 @@ public class AssetHandlerData
         Console.WriteLine("Loading asset thinge bingie idfk");
         foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers) //search for Classes in AssetRegistry
         {
-
-            foreach (var tagsAndValue in variable.TagsAndValues)
             {
-                if (tagsAndValue.Key.PlainText == "MeshArray") 
+                if (variable.AssetClass.ToString() == "REDMeshArray") 
                 {
-                    if(tagsAndValue.Value.ToString().Contains("MeshArray"))
-                    {
-                        Console.WriteLine(tagsAndValue);
-                    }
-                    var exist = await AppVM.CUE4ParseVM.Provider.TryLoadObjectAsync(variable.ObjectPath); // check if the model actually exists didn't find any better solution :(
-                    if (exist is not null)
-                    {
-                        Console.WriteLine($"File {variable.AssetName} typ {tagsAndValue}");
-                        items.Add(variable);
-                    }
+                    Console.WriteLine($"File {variable.AssetName} typ {variable}");
+                    items.Add(variable);
+                   
 
                 }
                 

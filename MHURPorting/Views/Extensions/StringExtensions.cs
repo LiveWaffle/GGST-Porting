@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace MHURPorting.Views.Extensions;
+namespace GGSTPorting.Views.Extensions;
 
 public static class StringExtensions
 {

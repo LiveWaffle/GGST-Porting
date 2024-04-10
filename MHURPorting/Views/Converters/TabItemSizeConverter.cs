@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Controls;
 using System.Windows.Data;
 
-namespace MHURPorting.Views.Converters;
+namespace GGSTPorting.Views.Converters;
 
 public class TabItemSizeConverter : IMultiValueConverter
 {

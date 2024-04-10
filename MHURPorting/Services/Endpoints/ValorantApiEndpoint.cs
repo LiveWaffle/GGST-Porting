@@ -12,9 +12,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using MHURPorting.AppUtils;
+using GGSTPorting.AppUtils;
 
-namespace MHURPorting.Services.Endpoints;
+namespace GGSTPorting.Services.Endpoints;
 
 public class ValorantApiEndpoint : AbstractApiProvider
 {

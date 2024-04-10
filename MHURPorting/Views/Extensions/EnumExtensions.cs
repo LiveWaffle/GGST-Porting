@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Markup;
 
-namespace MHURPorting.Views.Extensions;
+namespace GGSTPorting.Views.Extensions;
 
 public static class EnumExtensions
 {

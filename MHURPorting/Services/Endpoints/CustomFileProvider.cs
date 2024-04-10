@@ -13,7 +13,7 @@ using CUE4Parse.UE4.Versions;
 using CUE4Parse.Utils;
 using Ionic.Zip;
 
-namespace MHURPorting.Services.Endpoints;
+namespace GGSTPorting.Services.Endpoints;
 
 /// <summary>
 /// This class is used as a base type for all other custom file provider implementations

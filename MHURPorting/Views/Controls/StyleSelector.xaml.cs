@@ -9,12 +9,12 @@ using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Core.i18N;
 using CUE4Parse.UE4.Objects.Core.Math;
 using CUE4Parse.UE4.Objects.Engine;
-using MHURPorting.Export;
-using MHURPorting.ViewModels;
+using GGSTPorting.Export;
+using GGSTPorting.ViewModels;
 using SharpGLTF.Schema2;
 using SkiaSharp;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public partial class StyleSelector
 {

@@ -5,7 +5,7 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using Serilog;
 
-namespace MHURPorting.AppUtils;
+namespace GGSTPorting.AppUtils;
 
 public static class AppLog
 {

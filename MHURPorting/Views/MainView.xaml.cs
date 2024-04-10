@@ -10,17 +10,17 @@ using CUE4Parse.UE4.Assets.Exports.Texture;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Core.i18N;
 using CUE4Parse.UE4.Objects.Engine;
-using MHURPorting.AppUtils;
-using MHURPorting.Services;
-using MHURPorting.ViewModels;
-using MHURPorting.Views.Controls;
-using MHURPorting.Export;
-using MHURPorting.Export.Blender;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Services;
+using GGSTPorting.ViewModels;
+using GGSTPorting.Views.Controls;
+using GGSTPorting.Export;
+using GGSTPorting.Export.Blender;
+using GGSTPorting.Views.Extensions;
 using Serilog;
-using StyleSelector = MHURPorting.Views.Controls.StyleSelector;
+using StyleSelector = GGSTPorting.Views.Controls.StyleSelector;
 
-namespace MHURPorting.Views;
+namespace GGSTPorting.Views;
 
 public partial class MainView
 {

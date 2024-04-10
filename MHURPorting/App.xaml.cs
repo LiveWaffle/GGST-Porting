@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Threading;
 using AdonisUI.Controls;
-using MHURPorting.AppUtils;
-using MHURPorting.Services;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Services;
 using MessageBox = AdonisUI.Controls.MessageBox;
 using MessageBoxImage = AdonisUI.Controls.MessageBoxImage;
 
-namespace MHURPorting;
+namespace GGSTPorting;
 
 public partial class App
 {

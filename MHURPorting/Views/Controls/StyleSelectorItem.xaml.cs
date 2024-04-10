@@ -6,10 +6,10 @@ using System.Windows.Media.Imaging;
 using CUE4Parse.UE4.Assets.Exports;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Core.i18N;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.Views.Extensions;
 using SkiaSharp;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public partial class StyleSelectorItem
 {

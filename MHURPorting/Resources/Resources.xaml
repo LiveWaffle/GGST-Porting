@@ -1,12 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:MHURPorting"
+                    xmlns:local="clr-namespace:GGSTPorting"
                     xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
-                    xmlns:converters="clr-namespace:MHURPorting.Views.Converters"
+                    xmlns:converters="clr-namespace:GGSTPorting.Views.Converters"
                     xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
                     xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
                     xmlns:adonisConverters="clr-namespace:AdonisUI.Converters;assembly=AdonisUI"
-                    xmlns:behaviors="clr-namespace:MHURPorting.Views.Behaviors"
+                    xmlns:behaviors="clr-namespace:GGSTPorting.Views.Behaviors"
                     xmlns:system="clr-namespace:System;assembly=System.Runtime">
     <converters:EnumToStringConverter x:Key="EnumToString" />
     <converters:TabItemSizeConverter x:Key="TabItemSize" />
@@ -476,19 +476,19 @@
                                 </Grid>
                                 <ControlTemplate.Triggers>
                                     <DataTrigger Binding="{Binding AssetType}" Value="{x:Static local:ETreeItemType.Folder}">
-                                        <Setter TargetName="ItemIcon" Property="Source" Value="/MHURPorting;component/Resources/Folder.png"></Setter>
+                                        <Setter TargetName="ItemIcon" Property="Source" Value="/GGSTPorting;component/Resources/Folder.png"></Setter>
                                     </DataTrigger>
 
                                     <DataTrigger Binding="{Binding AssetType}" Value="{x:Static local:ETreeItemType.Asset}">
-                                        <Setter TargetName="ItemIcon" Property="Source" Value="/MHURPorting;component/Resources/Mesh.png"></Setter>
+                                        <Setter TargetName="ItemIcon" Property="Source" Value="/GGSTPorting;component/Resources/Mesh.png"></Setter>
                                     </DataTrigger>
 
                                     <DataTrigger Binding="{Binding Header}" Value="Engine">
-                                        <Setter TargetName="ItemIcon" Property="Source" Value="/MHURPorting;component/Resources/Unreal.png"></Setter>
+                                        <Setter TargetName="ItemIcon" Property="Source" Value="/GGSTPorting;component/Resources/Unreal.png"></Setter>
                                     </DataTrigger>
 
                                     <DataTrigger Binding="{Binding Header}" Value="Weapon">
-                                        <Setter TargetName="ItemIcon" Property="Source" Value="/MHURPorting;component/Resources/Weapon.png"></Setter>
+                                        <Setter TargetName="ItemIcon" Property="Source" Value="/GGSTPorting;component/Resources/Weapon.png"></Setter>
                                     </DataTrigger>
 
                                     <Trigger Property="IsExpanded" Value="False">

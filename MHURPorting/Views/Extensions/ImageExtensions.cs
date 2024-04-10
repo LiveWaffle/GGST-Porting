@@ -3,7 +3,7 @@ using CUE4Parse_Conversion.Textures;
 using CUE4Parse.UE4.Assets.Exports.Texture;
 using SkiaSharp;
 
-namespace MHURPorting.Views.Extensions;
+namespace GGSTPorting.Views.Extensions;
 
 public static class ImageExtensions
 {

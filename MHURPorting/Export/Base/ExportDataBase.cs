@@ -1,4 +1,4 @@
-﻿namespace MHURPorting.Export;
+﻿namespace GGSTPorting.Export;
 
 public class ExportDataBase
 {

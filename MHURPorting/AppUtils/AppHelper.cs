@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows;
 using Ookii.Dialogs.Wpf;
 
-namespace MHURPorting.AppUtils;
+namespace GGSTPorting.AppUtils;
 
 public static class AppHelper
 {

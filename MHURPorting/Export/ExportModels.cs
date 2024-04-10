@@ -2,7 +2,7 @@
 using CUE4Parse.UE4.Objects.Core.Math;
 using Newtonsoft.Json;
 
-namespace MHURPorting.Export;
+namespace GGSTPorting.Export;
 
 public class ExportPart
 {

@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CUE4Parse.UE4.Versions;
-using MHURPorting.AppUtils;
+using GGSTPorting.AppUtils;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class SettingsViewModel : ObservableObject
 {

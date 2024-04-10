@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.Views.Extensions;
 
-namespace MHURPorting.Views.Converters;
+namespace GGSTPorting.Views.Converters;
 
 public class EnumToStringConverter : IValueConverter
 {

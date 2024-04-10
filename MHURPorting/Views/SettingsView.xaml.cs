@@ -1,9 +1,9 @@
 ﻿using System.Windows;
-using MHURPorting.AppUtils;
-using MHURPorting.Services;
-using MHURPorting.ViewModels;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Services;
+using GGSTPorting.ViewModels;
 
-namespace MHURPorting.Views;
+namespace GGSTPorting.Views;
 
 public partial class SettingsView
 {

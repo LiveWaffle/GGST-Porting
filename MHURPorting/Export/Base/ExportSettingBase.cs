@@ -1,6 +1,6 @@
-﻿using MHURPorting.AppUtils;
+﻿using GGSTPorting.AppUtils;
 
-namespace MHURPorting.Export;
+namespace GGSTPorting.Export;
 public class ExportSettingsBase
 {
 }

@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CUE4Parse.UE4.Versions;
-using MHURPorting.AppUtils;
+using GGSTPorting.AppUtils;
 using Newtonsoft.Json;
 using YamlDotNet;
 using Serilog;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class StartupViewModel : ObservableObject
 {

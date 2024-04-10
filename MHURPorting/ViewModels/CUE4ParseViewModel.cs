@@ -16,17 +16,17 @@ using CUE4Parse.UE4.Objects.Core.Math;
 using CUE4Parse.UE4.Objects.Core.Misc;
 using CUE4Parse.UE4.Readers;
 using CUE4Parse.UE4.Versions;
-using MHURPorting.AppUtils;
-using MHURPorting.Services;
-using MHURPorting.Services.Endpoints;
-using MHURPorting.Services.Endpoints.Models;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Services;
+using GGSTPorting.Services.Endpoints;
+using GGSTPorting.Services.Endpoints.Models;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class CUE4ParseViewModel : ObservableObject
 {
 
-    public readonly MHURPortingFileProvider Provider;
+    public readonly GGSTPortingFileProvider Provider;
 
     public FAssetRegistryState? AssetRegistry;
 
@@ -82,8 +82,8 @@ public class CUE4ParseViewModel : ObservableObject
         }
         Provider = installType switch
         {
-            EInstallType.Local => new MHURPortingFileProvider(new DirectoryInfo(directory), SearchOption.AllDirectories, true, Version),
-            EInstallType.Live => new MHURPortingFileProvider(true, Version),
+            EInstallType.Local => new GGSTPortingFileProvider(new DirectoryInfo(directory), SearchOption.AllDirectories, true, Version),
+            EInstallType.Live => new GGSTPortingFileProvider(true, Version),
         };
     }
     

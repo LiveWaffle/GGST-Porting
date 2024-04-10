@@ -2,10 +2,10 @@
 using System.Data;
 using DiscordRPC;
 using DiscordRPC.Logging;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.Views.Extensions;
 using Serilog;
 
-namespace MHURPorting.Services;
+namespace GGSTPorting.Services;
 
 public static class DiscordService
 {

@@ -2,11 +2,11 @@
 using System.Windows;
 using AdonisUI.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
-using MHURPorting.AppUtils;
+using GGSTPorting.AppUtils;
 using MessageBox = AdonisUI.Controls.MessageBox;
 using MessageBoxImage = AdonisUI.Controls.MessageBoxImage;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public class ApplicationViewModel : ObservableObject
 {

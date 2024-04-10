@@ -1,6 +1,6 @@
-﻿using MHURPorting.ViewModels;
+﻿using GGSTPorting.ViewModels;
 
-namespace MHURPorting.Services;
+namespace GGSTPorting.Services;
 
 public static class ApplicationService
 {

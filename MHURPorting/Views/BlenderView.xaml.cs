@@ -1,9 +1,9 @@
 ﻿using System.Windows;
-using MHURPorting.ViewModels;
-using MHURPorting.AppUtils;
-using MHURPorting.Services;
+using GGSTPorting.ViewModels;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Services;
 
-namespace MHURPorting.Views;
+namespace GGSTPorting.Views;
 
 public partial class BlenderView
 {

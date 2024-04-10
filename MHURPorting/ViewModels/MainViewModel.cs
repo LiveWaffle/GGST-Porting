@@ -17,17 +17,17 @@ using CUE4Parse.UE4.Assets.Exports.SkeletalMesh;
 using CUE4Parse.UE4.Assets.Exports.StaticMesh;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Engine;
-using MHURPorting.AppUtils;
-using MHURPorting.Export;
-using MHURPorting.Export.Blender;
-using MHURPorting.Services;
-using MHURPorting.Views;
-using MHURPorting.Views.Controls;
-using MHURPorting.Export.Unreal;
-using Controls_StyleSelector = MHURPorting.Views.Controls.StyleSelector;
-using StyleSelector = MHURPorting.Views.Controls.StyleSelector;
+using GGSTPorting.AppUtils;
+using GGSTPorting.Export;
+using GGSTPorting.Export.Blender;
+using GGSTPorting.Services;
+using GGSTPorting.Views;
+using GGSTPorting.Views.Controls;
+using GGSTPorting.Export.Unreal;
+using Controls_StyleSelector = GGSTPorting.Views.Controls.StyleSelector;
+using StyleSelector = GGSTPorting.Views.Controls.StyleSelector;
 
-namespace MHURPorting.ViewModels;
+namespace GGSTPorting.ViewModels;
 
 public partial class MainViewModel : ObservableObject
 {

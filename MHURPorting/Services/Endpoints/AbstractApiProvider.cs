@@ -1,6 +1,6 @@
 ﻿using RestSharp;
 
-namespace MHURPorting.Services.Endpoints;
+namespace GGSTPorting.Services.Endpoints;
 
 public abstract class AbstractApiProvider
 {

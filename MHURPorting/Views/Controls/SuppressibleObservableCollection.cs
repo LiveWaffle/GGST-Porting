@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public class SuppressibleObservableCollection<T> : ObservableCollection<T>
 {

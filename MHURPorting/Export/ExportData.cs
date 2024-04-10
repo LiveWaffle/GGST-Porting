@@ -13,9 +13,9 @@ using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Objects.Core.i18N;
 using CUE4Parse.UE4.Objects.Engine;
 using CUE4Parse.UE4.Objects.UObject;
-using MHURPorting.Views.Extensions;
+using GGSTPorting.Views.Extensions;
 
-namespace MHURPorting.Export;
+namespace GGSTPorting.Export;
 
 public class ExportData
 {

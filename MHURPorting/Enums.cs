@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace MHURPorting;
+namespace GGSTPorting;
 
 public enum EInstallType
 {

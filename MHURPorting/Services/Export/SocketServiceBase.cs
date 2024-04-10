@@ -5,11 +5,11 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using MHURPorting.Export;
-using MHURPorting.Views.Extensions;
-using MHURPorting;
+using GGSTPorting.Export;
+using GGSTPorting.Views.Extensions;
+using GGSTPorting;
 
-namespace MHURPorting.Services.Export;
+namespace GGSTPorting.Services.Export;
 
 public abstract class SocketServiceBase
 {

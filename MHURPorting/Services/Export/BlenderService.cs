@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
-using MHURPorting.Export;
-using MHURPorting.Export.Blender;
-using MHURPorting.Services.Export;
+using GGSTPorting.Export;
+using GGSTPorting.Export.Blender;
+using GGSTPorting.Services.Export;
 using Newtonsoft.Json;
 
-namespace MHURPorting.Services;
+namespace GGSTPorting.Services;
 
 public class BlenderService : SocketServiceBase
 {

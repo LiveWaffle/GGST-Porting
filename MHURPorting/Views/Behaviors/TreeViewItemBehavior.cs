@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace MHURPorting.Views.Behaviors;
+namespace GGSTPorting.Views.Behaviors;
 
 public sealed class TreeViewItemBehavior
 {

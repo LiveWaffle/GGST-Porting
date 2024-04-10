@@ -10,11 +10,11 @@ using CUE4Parse.UE4.Assets.Exports.Texture;
 using CUE4Parse.UE4.Objects.Core.i18N;
 using CUE4Parse.UE4.Objects.Core.Math;
 using CUE4Parse.UE4.Objects.Engine;
-using MHURPorting.ViewModels;
+using GGSTPorting.ViewModels;
 using SkiaSharp;
 using CUE4Parse.UE4.Objects.UObject;
 
-namespace MHURPorting.Views.Controls;
+namespace GGSTPorting.Views.Controls;
 
 public partial class AssetSelectorItem  : IExportableAsset
 {

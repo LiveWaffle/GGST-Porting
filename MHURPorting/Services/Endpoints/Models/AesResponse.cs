@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace MHURPorting.Services.Endpoints.Models;
+namespace GGSTPorting.Services.Endpoints.Models;
 
 public class AesResponse
 {

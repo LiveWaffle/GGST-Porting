@@ -20,7 +20,7 @@ using CUE4Parse.UE4.Objects.UObject;
 using CUE4Parse.Utils;
 using SkiaSharp;
 
-namespace MHURPorting.Export;
+namespace GGSTPorting.Export;
 
 public static class ExportHelpers
 {
