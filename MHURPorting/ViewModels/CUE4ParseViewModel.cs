@@ -32,7 +32,7 @@ public class CUE4ParseViewModel : ObservableObject
 
     public readonly List<FAssetData> AssetDataBuffers = new();
 
-    public static readonly VersionContainer Version = new(EGame.GAME_UE4_LATEST);
+    public static readonly VersionContainer Version = new(EGame.GAME_UE4_25);
     
     public HashSet<string> MeshEntries;
     private static readonly string[] MeshRemoveList = {
@@ -77,7 +77,7 @@ public class CUE4ParseViewModel : ObservableObject
     {
         if (installType is EInstallType.Local && !Directory.Exists(directory))
         {
-            AppLog.Warning("Installation Not Found, MHUR installation path does not exist or has not been set. Please go to settings to verify you've set the right path and restart. The program will not work properly on Local Installation mode if you do not set it.");
+            AppLog.Warning("Installation Not Found, GGST installation path does not exist or has not been set. Please go to settings to verify you've set the right path and restart. The program will not work properly on Local Installation mode if you do not set it.");
             return;
         }
         Provider = installType switch
@@ -96,7 +96,7 @@ public class CUE4ParseViewModel : ObservableObject
         
         Provider.LoadVirtualPaths();
 
-        var assetArchive = await Provider.TryCreateReaderAsync("HerovsGame/AssetRegistry.bin");
+        var assetArchive = await Provider.TryCreateReaderAsync("RED/AssetRegistry.bin");
         if (assetArchive is not null)
         {
             AssetRegistry = new FAssetRegistryState(assetArchive);
@@ -119,7 +119,7 @@ public class CUE4ParseViewModel : ObservableObject
     private async Task InitializeKeys()
     {
         var keyResponse = AppSettings.Current.AesResponse;
-        var keyString = "0xB65A5EF761739F55923ECAE30C87159593C89FFC420AC6C7DD5264CC10D7EDD8";
+        var keyString = "0x3D96F3E41ED4B90B6C96CA3B2393F8911A5F6A48FE71F54B495E8F1AFD94CD73";
         await Provider.SubmitKeyAsync(Globals.ZERO_GUID, new FAesKey(keyString));
     }
     

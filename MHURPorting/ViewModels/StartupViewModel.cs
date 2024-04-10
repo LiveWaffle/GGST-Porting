@@ -41,7 +41,7 @@ public class StartupViewModel : ObservableObject
         bool found_install = false;
         foreach (var drive in DriveInfo.GetDrives())
         {
-            var launcherInstalledPath = $"{drive.Name}Program Files (x86)\\Steam\\steamapps\\common\\My Hero Ultra Rumble\\HerovsGame\\Content\\Paks";
+            var launcherInstalledPath = $"{drive.Name}Program Files (x86)\\Steam\\steamapps\\common\\GUILTY GEAR STRIVE\\RED\\Content\\Paks";
             if (Directory.Exists(launcherInstalledPath))
             {
                 found_install = true;
@@ -52,7 +52,7 @@ public class StartupViewModel : ObservableObject
             }
         }
         if (!found_install) {
-            ArchivePath = "My Hero Ultra Rumble/HerovsGame/Content/Paks";
+            ArchivePath = "GUILTY GEAR STRIVE\\RED\\Content\\Paks";
             Log.Information("No install found!");
         }
 

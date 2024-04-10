@@ -62,7 +62,7 @@
                 <TabControl Name="AssetControls" SelectionChanged="OnAssetTabSelectionChanged" IsEnabled="{Binding IsReady}">
                     <TabItem Style="{StaticResource TabItemEqualSize}">
                         <TabItem.Header>
-                            <controls:TextWithIcon Label="Heros" ImageSource="/MHURPorting;component/Resources/Outfit.png"/>
+                            <controls:TextWithIcon Label="Characters" ImageSource="/MHURPorting;component/Resources/Outfit.png"/>
                         </TabItem.Header>
                         <ListBox  ItemsSource="{Binding Outfits}" SelectionChanged="OnAssetSelectionChanged">
                             <ListBox.ItemsPanel>
