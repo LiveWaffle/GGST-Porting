@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GGSTPorting", "MHURPorting\GGSTPorting.csproj", "{08C6F4C5-1F49-4570-9139-0D760A3C9CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GGSTPorting", "GGSTPorting\GGSTPorting.csproj", "{08C6F4C5-1F49-4570-9139-0D760A3C9CD4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CUE4Parse", "CUE4Parse\CUE4Parse\CUE4Parse.csproj", "{D91DDC00-28DE-48BF-95CE-EAE85F274B0B}"
 EndProject

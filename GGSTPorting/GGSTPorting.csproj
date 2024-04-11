@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>GGSTPorting.ico</ApplicationIcon>
+		<RootNamespace>MHURPorting</RootNamespace>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	</PropertyGroup>
+		<ItemGroup>
+			<Resource Include="Resources\outfit.png" />
+		</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AdonisUI" Version="1.17.1" />
+		<PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="DiscordRichPresence" Version="1.0.175" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+		<PackageReference Include="RestSharp" Version="108.0.3-alpha.0.5" />
+		<PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="108.0.3-alpha.0.5" />
+		<PackageReference Include="YamlDotNet.NetCore" Version="1.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CUE4Parse\CUE4Parse-Conversion\CUE4Parse-Conversion.csproj" />
+		<ProjectReference Include="..\CUE4Parse\CUE4Parse\CUE4Parse.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="ViewModels\BundleDownloaderViewModel.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="GGSTPorting.ico" />
+	</ItemGroup>
+
+</Project>
