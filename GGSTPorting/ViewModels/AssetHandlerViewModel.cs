@@ -25,6 +25,7 @@ using GGSTPorting.Views.Controls;
 using SharpGLTF.Schema2;
 using System.Windows.Markup;
 using CUE4Parse.FileProvider.Objects;
+using System.IO;
 
 namespace GGSTPorting.ViewModels;
 
@@ -83,21 +84,25 @@ public class AssetHandlerData
 
     public async Task Execute()
     {
+        string CharDirectory = @"RED/Content/Chara/";
         Console.WriteLine("Executing Loading Handle thing");
         if (HasStarted) return;
         HasStarted = true;
         var items = new List<FAssetData>();
-        Console.WriteLine("Loading asset thinge bingie idfk");
-        foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers) //search for Classes in AssetRegistry
-        {
+        Console.WriteLine("Loading Assets...");
+            foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers)
             {
-                if (variable.AssetClass.ToString() == "REDMeshArray") 
+                if (variable.AssetClass.ToString() == "MeshArray")
                 {
-                    Console.WriteLine($"File {variable.AssetName} typ {variable}");
-                    items.Add(variable);
-                   
-
+                string assetPath = GetAssetPath(variable.AssetName);
+                {
+                    if (assetPath.StartsWith(CharDirectory, StringComparison.OrdinalIgnoreCase))
                 }
+                Console.WriteLine($"File {variable.AssetName} type {variable.AssetClass}");
+                items.Add(variable);
+
+                {
+                    }
                 
                 
             }
