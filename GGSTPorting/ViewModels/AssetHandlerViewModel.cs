@@ -92,14 +92,16 @@ public class AssetHandlerData
         Console.WriteLine("Loading Assets...");
             foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers)
             {
-                if (variable.AssetClass.ToString() == "MeshArray")
+                if (variable.AssetClass.ToString() == "RedMeshArray")
                 {
-                string assetPath = GetAssetPath(variable.AssetName);
+                string assetNameString = variable.AssetName.ToString();
+                if (assetNameString.StartsWith(CharDirectory));
                 {
-                    if (assetPath.StartsWith(CharDirectory, StringComparison.OrdinalIgnoreCase))
+                    string assetPath = variable.AssetName.ToString();
+                    Console.WriteLine($"File {variable.AssetName} type {variable.AssetClass}");
+                    items.Add(variable);
                 }
-                Console.WriteLine($"File {variable.AssetName} type {variable.AssetClass}");
-                items.Add(variable);
+               
 
                 {
                     }
