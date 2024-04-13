@@ -1,0 +1,108 @@
+{
+    "character": [
+        {
+            "CharacterID": "SOL",
+            "CharacterName": "Sol Badguy"
+        },
+        {
+            "CharacterID": "KYK",
+            "CharacterName": "Ky Kiske"
+        },
+        {
+            "CharacterID": "MAY",
+            "CharacterName": "May"
+        },
+        {
+            "CharacterID": "AXL",
+            "CharacterName": "Axl Low"
+        },
+        {
+            "CharacterID": "CHP",
+            "CharacterName": "Chipp Zanuff"
+        },
+        {
+            "CharacterID": "POT",
+            "CharacterName": "Potemkin"
+        },
+        {
+            "CharacterID": "FAU",
+            "CharacterName": "Faust"
+        },
+        {
+            "CharacterID": "MLL",
+            "CharacterName": "Millia Rage"
+        },
+        {
+            "CharacterID": "ZAT",
+            "CharacterName": "Zato-1"
+        },
+        {
+            "CharacterID": "RAM",
+            "CharacterName": "Ramlethal Valentine"
+        },
+        {
+            "CharacterID": "LEO",
+            "CharacterName": "Leo Whitefang"
+        },
+        {
+            "CharacterID": "NAG",
+            "CharacterName": "Nagoriyuki"
+        },
+        {
+            "CharacterID": "GIO",
+            "CharacterName": "Giovanna"
+        },
+        {
+            "CharacterID": "ANJ",
+            "CharacterName": "Anji Mito"
+        },
+        {
+            "CharacterID": "INO",
+            "CharacterName": "I-No"
+        },
+        {
+            "CharacterID": "JKO",
+            "CharacterName": "Jack-O' Valentine"
+        },
+        {
+            "CharacterID": "GLD",
+            "CharacterName": "Goldlewis Dickinson"
+        },
+        {
+            "CharacterID": "DMY",
+            "CharacterName": "Happy Chaos"
+        },
+        {
+            "CharacterID": "BGT",
+            "CharacterName": "Bridget"
+        },
+        {
+            "CharacterID": "SIN",
+            "CharacterName": "Sin"
+        },
+        {
+            "CharacterID": "BED",
+            "CharacterName": "Bedman"
+        },
+        {
+            "CharacterID": "ASK",
+            "CharacterName": "Asuka R#"
+        },
+        {
+            "CharacterID": "JHN",
+            "CharacterName": "Johnny"
+        },
+        {
+            "CharacterID": "ELP",
+            "CharacterName": "Elphelt"
+        },
+        {
+            "CharacterID": "ABA",
+            "CharacterName": "A.B.A"
+        },
+        {
+            "CharacterID": "TST",
+            "CharacterName": "Testament"
+        }
+    ]
+}

@@ -26,6 +26,8 @@ using SharpGLTF.Schema2;
 using System.Windows.Markup;
 using CUE4Parse.FileProvider.Objects;
 using System.IO;
+using Newtonsoft.Json;
+using GGSTPorting.NameChange;
 
 namespace GGSTPorting.ViewModels;
 
@@ -82,33 +84,36 @@ public class AssetHandlerData
     public List<string> ClassNames;
     public Func<UObject, UTexture2D?> IconGetter;
 
+
     public async Task Execute()
     {
-        string CharDirectory = @"RED/Content/Chara/";
+        string CharDirectory = @"/Game/Chara/";
         Console.WriteLine("Executing Loading Handle thing");
         if (HasStarted) return;
         HasStarted = true;
         var items = new List<FAssetData>();
         Console.WriteLine("Loading Assets...");
-            foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers)
-            {
-                if (variable.AssetClass.ToString() == "RedMeshArray")
-                {
-                string assetNameString = variable.AssetName.ToString();
-                if (assetNameString.StartsWith(CharDirectory));
-                {
-                    string assetPath = variable.AssetName.ToString();
-                    Console.WriteLine($"File {variable.AssetName} type {variable.AssetClass}");
-                    items.Add(variable);
-                }
-               
 
+
+
+        GGSTPortingDefault Char = JsonConvert.DeserializeObject<GGSTPortingDefault>(File.ReadAllText("char.json"));
+
+        foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers)
+        {
+            if (variable.AssetClass.ToString() == "REDMeshArray")
+            {
+                Console.WriteLine("Found Mesh Array");
+                string assetNameString = variable.ObjectPath;
+
+                if (assetNameString.StartsWith(CharDirectory))
                 {
-                    }
-                
-                
+                    string jsonVariable = JsonConvert.SerializeObject(variable);
+                    items.Add(variable);
+
+                }
             }
         }
+
         Console.WriteLine(items.Count);
         await Parallel.ForEachAsync(items, async (data, token) => //load if found
         {
@@ -117,6 +122,20 @@ public class AssetHandlerData
             await DoLoadSkeletalMesh(data);
         });
     }
+    private string GetCharacterName(List<Character> characters, string characterID)
+    {
+        foreach (var character in characters)
+        {
+            if (character.ID == characterID)
+            {
+                return character.Name;
+            }
+        }
+        return "Nothing found";
+    }
+
+
+
 
     private async Task DoLoadSkeletalMesh(FAssetData data)
     {
