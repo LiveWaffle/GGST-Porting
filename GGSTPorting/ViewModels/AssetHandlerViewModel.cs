@@ -28,6 +28,7 @@ using CUE4Parse.FileProvider.Objects;
 using System.IO;
 using Newtonsoft.Json;
 using GGSTPorting.NameChange;
+using System.Windows.Media.TextFormatting;
 
 namespace GGSTPorting.ViewModels;
 
@@ -94,10 +95,6 @@ public class AssetHandlerData
         var items = new List<FAssetData>();
         Console.WriteLine("Loading Assets...");
 
-
-
-        GGSTPortingDefault Char = JsonConvert.DeserializeObject<GGSTPortingDefault>(File.ReadAllText("char.json"));
-
         foreach (var variable in AppVM.CUE4ParseVM.AssetRegistry.PreallocatedAssetDataBuffers)
         {
             if (variable.AssetClass.ToString() == "REDMeshArray")
@@ -122,17 +119,6 @@ public class AssetHandlerData
             await DoLoadSkeletalMesh(data);
         });
     }
-    private string GetCharacterName(List<Character> characters, string characterID)
-    {
-        foreach (var character in characters)
-        {
-            if (character.ID == characterID)
-            {
-                return character.Name;
-            }
-        }
-        return "Nothing found";
-    }
 
 
 
@@ -146,8 +132,34 @@ public class AssetHandlerData
         Asset = await AppVM.CUE4ParseVM.Provider.TryLoadObjectAsync(data.ObjectPath);
         fake.Name = "kys";
         await Application.Current.Dispatcher.InvokeAsync(() => TargetCollection.Add(new AssetSelectorItem(Asset, Asset, Asset, new UTexture2D(), stupidname, false)), DispatcherPriority.Background);
+        GGSTPortingDefault Char = JsonConvert.DeserializeObject<GGSTPortingDefault>(File.ReadAllText("char.json"));
+
+        var selected_character_id = data.AssetName.ToString().Substring(3, 5);
 
 
+        string name = "";
+        foreach (var character in Char.Character)
+        {
+            if (character.ID == selected_character_id)
+            {
+                name = character.Name;
+                break;
+            }
+        }
+
+
+        var Image_asset = $"Game/UI/Chara_Image_Xrd3/Face_512/Face_512_{selected_character_id}.uasset";
+        var Loaded_Image_Asset = await AppVM.CUE4ParseVM.Provider.TryLoadObjectAsync(Image_asset);
+        if (Loaded_Image_Asset is null)
+        {
+            return;
+        }
+
+        var Loaded_Image_Texture = Loaded_Image_Asset.Properties.ToArray();
+
+        var Character_Image_Sprite = await AppVM.CUE4ParseVM.Provider.TryLoadObjectAsync(Loaded_Image_Texture[0].Tag.GenericValue.ToString());
+        var Character_Image_Texture = Character_Image_Sprite.GetOrDefault<UTexture2D>("BakedSourceTexture");
+        Asset = await AppVM.CUE4ParseVM.Provider.TryLoadObjectAsync(data.ObjectPath);
     }
     private async Task DoLoad(FAssetData data, bool random = false)
     {
