@@ -121,17 +121,12 @@ public static class ExportHelpers
         return null;
     }
 
-    public static void CharacterParts(IEnumerable<UObject> inputParts, List<ExportPart> exportParts, UObject ogObjects)
+    public static void CharacterParts(FStructFallback[] inputParts, List<ExportPart> exportParts, UObject ogObjects)
     {
         foreach (var part in inputParts)
         {
-            if (part is USkeletalMesh skeletalMesh)
-            {
-            }
-            else
-            {
-                skeletalMesh = part.Get<USkeletalMesh?>("SkeletalMesh");
-            }
+            var skeletalMesh = part.Get<USkeletalMesh>("SkeletalMesh");
+            String name = part.Get<FName>("Name").Text;
             if (skeletalMesh is null) continue;
             Mesh(skeletalMesh, exportParts);
             if (part.TryGetValue(out UMaterialInstanceConstant[] materialOverrides, "MaterialOverrides"))

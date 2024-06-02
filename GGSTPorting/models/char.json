@@ -103,6 +103,10 @@
         {
             "CharacterID": "TST",
             "CharacterName": "Testament"
+        },
+	{
+            "CharacterID": "SLY",
+            "CharacterName": "Slayer"
         }
     ]
 }
